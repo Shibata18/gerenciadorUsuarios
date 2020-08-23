@@ -5,7 +5,13 @@
 <a href="{% url 'customer:customer-create' %}">
     <button class="btn btn-success" style='float:right;margin-bottom:5px;'>Adicionar</button>
 </a>
-<table class="table table-bordered">
+<form>
+    <div class="form-group mb-1">
+        <input type="text" class="form-control" name='name' placeholder="Buscar por nome.."/>
+        <button type="submit" class="btn btn-primary">Buscaar</button>
+    </div>
+</form>
+<table class="table table-bordered mt-4">
     <thead>
         <tr>
             <th>Nome</th>
